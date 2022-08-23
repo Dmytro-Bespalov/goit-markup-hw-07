@@ -15,6 +15,12 @@
   clip: rect(0 0 0 0);
 }
 
+.footer-form-subscribe, .work-process__text, .benefits__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
 body {
   font-family: roboto, sans-serif;
   background-color: #FFFFFF;
@@ -123,6 +129,9 @@ img {
   color: var(--accent-color);
 }
 
+.current {
+  color: var(--accent-color);
+}
 .current::after {
   position: absolute;
   content: "";
@@ -138,10 +147,6 @@ img {
 }
 .menu__link .current::after:hover:after {
   background-color: var(--accent-color);
-}
-
-.current {
-  color: var(--accent-color);
 }
 
 .contacts {
@@ -165,6 +170,10 @@ img {
 .contacts__link:hover, .contacts__link:focus {
   color: var(--accent-color);
 }
+.contacts__link .contacts__icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
 
 .contacts__item:not(:last-child) {
   margin-right: 50px;
@@ -172,11 +181,6 @@ img {
 
 .contacts__item_box {
   display: flex;
-}
-
-.contacts__link > .contacts__icon {
-  fill: currentColor;
-  margin-right: 10px;
 }
 
 .hero {
@@ -252,9 +256,6 @@ img {
 }
 
 .benefits__title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
@@ -301,9 +302,6 @@ img {
   bottom: 0;
   padding-top: 27px;
   padding-bottom: 27px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -538,9 +536,6 @@ img {
 }
 
 .footer-form-subscribe {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #FFFFFF;
@@ -777,6 +772,16 @@ img {
   letter-spacing: 0.03em;
   color: #757575;
 }
+.modal-form-checkbox-label::before {
+  content: " ";
+  display: block;
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  cursor: pointer;
+  border-radius: 2px;
+  margin-right: 9px;
+}
 
 .modal-form {
   display: flex;
@@ -816,7 +821,6 @@ img {
   outline: none;
   border-color: var(--accent-color);
 }
-
 .modal-form-comment::placeholder {
   color: rgba(117, 117, 117, 0.5);
   font-weight: 400;
@@ -872,17 +876,6 @@ img {
 }
 .close-modal-icon:focus {
   fill: var(--accent-color);
-}
-
-.modal-form-checkbox-label::before {
-  content: " ";
-  display: block;
-  width: 16px;
-  height: 15px;
-  border: 2px solid #212121;
-  cursor: pointer;
-  border-radius: 2px;
-  margin-right: 9px;
 }
 
 .modal-form-checkbox:checked + .modal-form-checkbox-label::before {

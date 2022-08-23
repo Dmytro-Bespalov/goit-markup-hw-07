@@ -108,9 +108,7 @@
 }
 
 .footer-form-subscribe {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
+    @extend %text-placeholder;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #FFFFFF;
