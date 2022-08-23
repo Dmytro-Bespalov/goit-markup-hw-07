@@ -18,6 +18,11 @@
 .work-process__item {
     display: block;
     position: relative;
+
+    &:not(:last-child) {
+            margin-right: 30px;
+            width: 370px;
+        }
 }
 
 .work-process__text {
@@ -35,9 +40,4 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #FFFFFF;
-}
-
-.work-process__item:not(:last-child) {
-    margin-right: 30px;
-    width: 370px;
 }
